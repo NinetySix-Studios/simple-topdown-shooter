@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421aaaf45062442eb8da04884db4ff16, type: 3}
   m_Name: GameBindings
   m_EditorClassIdentifier: 
-  samplePrefab: {fileID: -9214239196461105536, guid: 6522a4703d252419fac475ffb3685816, type: 3}
-  sampleScriptableObject: {fileID: 11400000, guid: c17bc4feff3e043bf88ff498604ea463, type: 2}
+  samplePrefab: {fileID: -9214239196461105536, guid: 6522a4703d252419fac475ffb3685816,
+    type: 3}
+  sampleScriptableObject: {fileID: 11400000, guid: c17bc4feff3e043bf88ff498604ea463,
+    type: 2}
+  _audioManager: {fileID: 4293021838009615996, guid: 8ee4a3d4731701b4fb8a001e1bc38678,
+    type: 3}
