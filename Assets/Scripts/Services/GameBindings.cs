@@ -1,4 +1,5 @@
 using Collections;
+using Project.Managers;
 using Project.Views;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -18,6 +19,11 @@ namespace Project.Services
         public SampleScriptableObject SampleScriptableObject => sampleScriptableObject;
         
         
+        [SerializeField] 
+        private AudioManager _audioManager;
+        
+        public AudioManager AudioManager => _audioManager;
+        
         // [SerializeField] 
         // private SamplePrefab samplePrefab;
         //
@@ -28,11 +34,6 @@ namespace Project.Services
         // private SceneCollectionManager _sceneCollectionManager;
         //
         // public SceneCollectionManager SceneCollectionManager => _sceneCollectionManager;
-        //
-        // [SerializeField] 
-        // private AudioManager _audioManager;
-        //
-        // public AudioManager AudioManager => _audioManager;
         //
         // [SerializeField] 
         // private PlayerDataCollection _playerDataCollection;

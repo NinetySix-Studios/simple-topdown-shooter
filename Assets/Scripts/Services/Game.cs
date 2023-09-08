@@ -1,3 +1,5 @@
+using Collections;
+using Project.Managers;
 using Project.Views;
 using UnityEngine;
 
@@ -35,7 +37,13 @@ namespace Project.Services
             Object.DontDestroyOnLoad(servicesObject);
 
             // InitializeSceneCollectionManager(servicesObject, bindings);
-            // InitializeAudioManager(servicesObject, bindings);
+            InitializeAudioManager(servicesObject, bindings);
+        }
+        
+        private static void InitializeAudioManager(GameObject servicesObject, GameBindings bindings)
+        {
+            AudioManager audioManager = Object.Instantiate(bindings.AudioManager, servicesObject.transform);
+            Services.Add<AudioManager>(audioManager);
         }
 
         /// <summary>
